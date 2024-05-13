@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@font-face{
+    font-family:'Passion';
+    src: url(pacote-d012/Fontes/Passion_One/PassionOne-Regular.ttf) format(truetype); 
+}
+@font-face {
+    font-family:'Sriracha';
+    src: url(pacote-d012/Fontes/Sriracha/Sriracha-Regular.ttf) format(truetype);
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 70px;
+}
+header > h1{   
+    color: white;
+    font-size: 10vw;
+    font-family: 'Passion';
+}
+header > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+header > p > a:hover{
+    text-decoration: underline;
+    color: white;
+    font-weight: bolder;
+}
+main{
+    font-family: 'Sriracha';
+    font-size: 3vw;
+}
+.bloco{
+    margin: 80px 0px 80px 20px;
+}
+#joana{
+    background: black url(pacote-d012/imagens/background001.jpg) center center no-repeat fixed ;
+    background-size: cover;
+    
+}
+#textj{  
+    background-color: rgba(0, 0, 0, 0.616);
+    width: max-content;
+    color: white;
+    padding: 50px 0px 50px 20px;
+}
+#paper{
+    background: black url(pacote-d012/imagens/background002.jpg) center center no-repeat fixed ;
+    background-size: cover;
+}
+#textp{  
+    background-color: rgba(0, 0, 0, 0.616);
+    width: max-content;
+    color: white;
+    padding: 50px 0px 50px 20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer > p > a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
