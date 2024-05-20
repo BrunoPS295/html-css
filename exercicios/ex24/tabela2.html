@@ -6,30 +6,60 @@
     <title>Lista_de_unidades_federativas_do_Brasil_por_população</title>
     <style>
         table{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
+            position: relative;
             border-collapse: collapse;
-            width: 700px;
-            height: 400px ;
+            width: 1000px;
+            height: 1000px;
             text-align: center;
+            
+        }
+        caption{
+            font-size: 25px;
+            background-color: gray;
+            padding: 5px;
+            border: 2px solid black;
+            border-bottom: 0px;
         }
         thead{
             background-color: gray;
             font-weight: bold;
+            
+        }
+        thead > tr > th{
+            border: 2px solid black;
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd){ /*2n-1*/
+            background-color: rgb(165, 165, 165);
+        }
+        tbody > tr:nth-child(even){/*2n*/
+            background-color: white;
         }
         td{
             border: 2px solid black;
             height: 20px ;
             
         }
+        tfoot{
+            background-color: gray;
+            font-weight: bold;  
+        }
+        tfoot > tr > th{
+            border: 2px solid black;
+            font-size: 20px;
+            padding: 3px;
+        }
     </style>
 </head>
 <body>
     <table>
+        <caption>
+            Lista de unidades federativas do Brasil por população
+        </caption>
         <thead>
-            <tr>
+            <tr>  
                 <th scope="col">Posição</th>
                 <th scope="col">Unidade federativa</th>
                 <th>População(2022)</th>
@@ -226,6 +256,12 @@
                 
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <th colspan="2">203 062 512(Censo 2022)</th><!--Para vertical é rowspan-->
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
