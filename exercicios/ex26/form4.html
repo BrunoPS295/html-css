@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Preencha os campos abaixo</legend>
+            <div><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"></div>
+            <div><label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail"></div>
+                <div><label for="iphone">Telefone:</label>
+                    <input type="tel" name="phone" id="iphone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx"></div>
+                    <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
