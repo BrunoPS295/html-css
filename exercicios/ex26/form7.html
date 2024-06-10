@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p>
+         <label for="isl">Melhor SoulsLike</label>
+         <select name="sl" id="isl">
+            <optgroup>
+                <label for="isl">Escolha</label>
+                <option value="Ds1">Dark Souls 1</option>
+                <option value="Ds2">Dark Souls 2</option>
+                <option value="Ds3">Dark Souls 3</option>
+                <option value="Melhor">Sekiro</option>
+                <option value="Elden">Elden Ring</option>
+            </optgroup>  
+         </select>
+     </p>
+     <p>
+        <label for="imj">Melhor jogo</label>
+        <input type="text" name="mj" id="imj" list="lst mj">
+        <datalist id="lst mj">
+                <option value="Ds1">Dark Souls 1</option>
+                <option value="Ds2">Dark Souls 2</option>
+                <option value="Ds3">Dark Souls 3</option>
+                <option value="Melhor">Sekiro</option>
+                <option value="Elden">Elden Ring</option>
+        </datalist>
+     </p>
+     <p>
+         <label for="imsn">Mensagem:</label><br>
+         <textarea name="msn" id="imsn" cols="40" rows="10"></textarea>
+     </p>
+     <p>
+        <input type="submit">
+        <input type="reset">
+     </p>
+</body>
+</html>
