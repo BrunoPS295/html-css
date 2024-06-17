@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@media all {
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.651);
+    }
+}
+
+@media screen and (orientation:portrait){
+    body{
+        background-color: brown;
+    }
+}
+
+@media screen and (orientation:landscape){
+    body{
+        background-color: aqua;
+    }
+}
