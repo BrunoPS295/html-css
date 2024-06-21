@@ -2,11 +2,10 @@
 #burguer{
     display: none;
 }
-menu > ul > li{
-    display: inline-block;
-   
-}
 
-a{
-    border: 3px solid black;
+#itens2{
+    display:inline-block;
+}
+#itens{
+    display: none;
 }
