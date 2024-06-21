@@ -2,6 +2,11 @@
 #burguer{
     display: none;
 }
-ul , menu{
-    display: block;
+menu > ul > li{
+    display: inline-block;
+   
+}
+
+a{
+    border: 3px solid black;
 }
