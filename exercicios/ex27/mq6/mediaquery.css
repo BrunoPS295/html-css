@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@media (min-width:768px) {
+    body{
+        background-image: linear-gradient(#49a09d,#5f2c82);
+    }
+    main{
+        width: 768px;
+        height: 500px;
+    }
+    #iimg{
+        background-image: url(../imagens/pexels-cesar-fonseca-17375691-10776723.jpg);
+        float: left;
+        height: 100%;
+        width: 35%;
+        margin-right: 5px;
+    }
+    section{
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 18px;
+    }
+   .input{
+    width: 90%;
+   } 
+   #ientrar{
+    width: 90%;
+   }
+   #islasenha{
+    width: 90%;
+   }
+    
+}
+@media (min-width:992px) {
+    #iimg{
+        width: 50%;
+    }
+    section{
+        width: 49%;
+    }
+}
+@media (min-width:1200px) {
+    
+}
