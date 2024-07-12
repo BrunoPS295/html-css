@@ -7,25 +7,28 @@
     <style>
         .container1 , .container2 , .container3 , .container4{
             margin: 10px;
-            display: flex;
-            
+            display: flex;Grupo flex 
             background-color: blue;
             
         }
         .container1{
             flex-direction: row;
+            flex-wrap: wrap;
         }
 
         .container2{
             flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
         }
 
         .container3{
             flex-direction: column;
+            flex-wrap: nowrap;
         }
 
         .container4{
             flex-direction: column-reverse;
+            flex-wrap: nowrap;
         }
 
         .itens{
@@ -33,36 +36,50 @@
             flex: auto; 
             padding: 10px;
         }
+        h2{
+            display: inline-block;
+        }
+        img{
+            display: block;
+            width: 90vw;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
     <div class="container1">
-        <div class="itens">1</div>
-        <div class="itens">2</div>
-        <div class="itens">3</div>
-        <div class="itens">4</div>
-        <div class="itens">5</div>
+        <div class="itens">Grupo flex 1</div>
+        <div class="itens">Grupo flex 2</div>
+        <div class="itens">Grupo flex 3</div>
+        <div class="itens">Grupo flex 4</div>
+        <div class="itens">Grupo flex 5</div>
     </div>
+    <h2>row, wrap normal</h2>
     <div class="container2">
-        <div class="itens">1</div>
-        <div class="itens">2</div>
-        <div class="itens">3</div>
-        <div class="itens">4</div>
-        <div class="itens">5</div>
+        <div class="itens">Grupo flex 1</div>
+        <div class="itens">Grupo flex 2</div>
+        <div class="itens">Grupo flex 3</div>
+        <div class="itens">Grupo flex 4</div>
+        <div class="itens">Grupo flex 5</div>
     </div>
+    <h2>row-reverse, wrap reverse</h2>
     <div class="container3">
-        <div class="itens">1</div>
-        <div class="itens">2</div>
-        <div class="itens">3</div>
-        <div class="itens">4</div>
-        <div class="itens">5</div>
+        <div class="itens">Grupo flex 1</div>
+        <div class="itens">Grupo flex 2</div>
+        <div class="itens">Grupo flex 3</div>
+        <div class="itens">Grupo flex 4</div>
+        <div class="itens">Grupo flex 5</div>
     </div>
+    <h2>column, no wrap</h2>
     <div class="container4">
-        <div class="itens">1</div>
-        <div class="itens">2</div>
-        <div class="itens">3</div>
-        <div class="itens">4</div>
-        <div class="itens">5</div>
+        <div class="itens">Grupo flex 1</div>
+        <div class="itens">Grupo flex 2</div>
+        <div class="itens">Grupo flex 3</div>
+        <div class="itens">Grupo flex 4</div>
+        <div class="itens">Grupo flex 5</div>
     </div>
+    <h2>column-reverse, no wrap</h2>
+    <img src="Captura de Tela (71).png" alt="">
+    <h2>Justify content</h2>
 </body>
 </html>
