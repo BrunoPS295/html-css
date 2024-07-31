@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
     <style>
-        .container1 , .container2 , .container3 , .container4{
+        article > div{
+            border-radius:10px;
+            overflow: hidden;
             margin: 10px;
-            display: flex;Grupo flex 
-            background-color: blue;
-            
+            display: flex; 
+            background-color: aquamarine;            
+        }
+        main{
+            width: 80vw;
+            margin: auto;
         }
         .container1{
             flex-direction: row;
+            /*Quando diminuido o texto vai para baixo*/
             flex-wrap: wrap;
         }
 
         .container2{
             flex-direction: row-reverse;
+            /*Quando diminuido o texto vai para cima*/
             flex-wrap: wrap-reverse;
         }
 
@@ -30,56 +37,177 @@
             flex-direction: column-reverse;
             flex-wrap: nowrap;
         }
-
+        .container10{
+            align-content:flex-end;
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        .container20{
+            align-content:flex-start;
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        .container30{
+            align-content:stretch;
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        .container40{
+            align-content:center;
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        .container50{
+            align-content:space-between;
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        .container60{
+            align-content:space-evenly;
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        .container70{
+            align-content:space-around;
+            flex-wrap: wrap;
+            height: 400px;
+        }
         .itens{
             background-color: aqua;
             flex: auto; 
-            padding: 10px;
+            padding: 30px;
+            margin: 5px;
+        }
+        h1{
+            width: max-content;
+            border-radius:10px;
+            display: block;
+            margin: auto;
+            text-transform: uppercase;
+            background-color: rgba(0, 0, 255, 0.514);
         }
         h2{
-            display: inline-block;
+            width: max-content;
+            border-radius:10px;
+            display: block;
+            margin:20px auto;
+            text-transform: uppercase;
+            background-color: rgb(76, 76, 255);
         }
         img{
             display: block;
-            width: 90vw;
+            width: 80vw;
             margin: auto;
         }
     </style>
 </head>
 <body>
-    <div class="container1">
-        <div class="itens">Grupo flex 1</div>
-        <div class="itens">Grupo flex 2</div>
-        <div class="itens">Grupo flex 3</div>
-        <div class="itens">Grupo flex 4</div>
-        <div class="itens">Grupo flex 5</div>
-    </div>
-    <h2>row, wrap normal</h2>
-    <div class="container2">
-        <div class="itens">Grupo flex 1</div>
-        <div class="itens">Grupo flex 2</div>
-        <div class="itens">Grupo flex 3</div>
-        <div class="itens">Grupo flex 4</div>
-        <div class="itens">Grupo flex 5</div>
-    </div>
-    <h2>row-reverse, wrap reverse</h2>
-    <div class="container3">
-        <div class="itens">Grupo flex 1</div>
-        <div class="itens">Grupo flex 2</div>
-        <div class="itens">Grupo flex 3</div>
-        <div class="itens">Grupo flex 4</div>
-        <div class="itens">Grupo flex 5</div>
-    </div>
-    <h2>column, no wrap</h2>
-    <div class="container4">
-        <div class="itens">Grupo flex 1</div>
-        <div class="itens">Grupo flex 2</div>
-        <div class="itens">Grupo flex 3</div>
-        <div class="itens">Grupo flex 4</div>
-        <div class="itens">Grupo flex 5</div>
-    </div>
-    <h2>column-reverse, no wrap</h2>
-    <img src="Captura de Tela (71).png" alt="">
-    <h2>Justify content</h2>
+    <main>
+        <article id="article1">
+            <h1>Row,collum and wrap</h1>
+            <h2>row, wrap normal</h2>
+            <div class="container1">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+            <h2>row-reverse, wrap reverse</h2>
+            <div class="container2">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+            <h2>column, no wrap</h2>
+            <div class="container3">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+        
+            <h2>column-reverse, no wrap</h2>
+            <div class="container4">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+        </article>
+        <!--Relativo ao main axis ou seja linha onde o texto foi inserido se não fosse o collumn ele taria a direita-->
+        <h1>Justify content</h1>
+        <img src="Captura de Tela (71).png" alt="">
+        <h1>Align-itens</h1>
+        
+        <article>
+            <h2>flex-end</h2>
+            <div class="container10">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+
+            <h2>flex-start</h2>
+            <div class="container20">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+
+            <h2>stretch</h2>
+            <div class="container30">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+
+            <h2>center</h2>
+            <div class="container40">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+
+            <h2>space-between</h2>
+            <div class="container50">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+
+            <h2>space-evenly</h2>
+            <div class="container60">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+
+            <h2>space-around</h2>
+            <div class="container70">
+                <div class="itens">Grupo flex 1</div>
+                <div class="itens">Grupo flex 2</div>
+                <div class="itens">Grupo flex 3</div>
+                <div class="itens">Grupo flex 4</div>
+                <div class="itens">Grupo flex 5</div>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
