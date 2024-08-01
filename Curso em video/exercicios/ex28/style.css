@@ -1,0 +1,113 @@
+@charset "UTF-8";
+article > div{
+    border-radius:10px;
+    overflow: hidden;
+    margin: 10px;
+    display: flex; 
+    background-color: aquamarine;            
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+}
+
+.itens{
+    background-color: aqua;
+    flex: auto; 
+    padding: 30px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+h1{
+    width: max-content;
+    border-radius:10px;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 255, 0.514);
+}
+
+h2{
+    width: max-content;
+    border-radius:10px;
+    display: block;
+    margin:20px auto;
+    text-transform: uppercase;
+    background-color: rgb(76, 76, 255);
+}
+
+img{
+    display: block;
+    width: 80vw;
+    margin: auto;
+}
+
+#rowcollumandwrap > .container1{
+    flex-direction: row;
+    /*Quando diminuido o texto vai para baixo*/
+    flex-wrap: wrap;
+}
+
+#rowcollumandwrap > .container2{
+    flex-direction: row-reverse;
+    /*Quando diminuido o texto vai para cima*/
+    flex-wrap: wrap-reverse;
+}
+
+#rowcollumandwrap > .container3{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#rowcollumandwrap > .container4{
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
+
+#align-content > .container1{
+    align-content:flex-end;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#align-content > .container2{
+    align-content:flex-start;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#align-content > .container3{
+    align-content:stretch;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#align-content > .container4{
+    align-content:center;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#align-content > .container5{
+    align-content:space-between;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#align-content > .container6{
+    align-content:space-evenly;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#align-content > .container7{
+    align-content:space-around;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#align-self > .container1{
+    height: 400px;
+}

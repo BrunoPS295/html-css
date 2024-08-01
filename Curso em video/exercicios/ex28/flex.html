@@ -4,106 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox</title>
-    <style>
-        article > div{
-            border-radius:10px;
-            overflow: hidden;
-            margin: 10px;
-            display: flex; 
-            background-color: aquamarine;            
-        }
-        main{
-            width: 80vw;
-            margin: auto;
-        }
-        .container1{
-            flex-direction: row;
-            /*Quando diminuido o texto vai para baixo*/
-            flex-wrap: wrap;
-        }
-
-        .container2{
-            flex-direction: row-reverse;
-            /*Quando diminuido o texto vai para cima*/
-            flex-wrap: wrap-reverse;
-        }
-
-        .container3{
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }
-
-        .container4{
-            flex-direction: column-reverse;
-            flex-wrap: nowrap;
-        }
-        .container10{
-            align-content:flex-end;
-            flex-wrap: wrap;
-            height: 400px;
-        }
-        .container20{
-            align-content:flex-start;
-            flex-wrap: wrap;
-            height: 400px;
-        }
-        .container30{
-            align-content:stretch;
-            flex-wrap: wrap;
-            height: 400px;
-        }
-        .container40{
-            align-content:center;
-            flex-wrap: wrap;
-            height: 400px;
-        }
-        .container50{
-            align-content:space-between;
-            flex-wrap: wrap;
-            height: 400px;
-        }
-        .container60{
-            align-content:space-evenly;
-            flex-wrap: wrap;
-            height: 400px;
-        }
-        .container70{
-            align-content:space-around;
-            flex-wrap: wrap;
-            height: 400px;
-        }
-        .itens{
-            background-color: aqua;
-            flex: auto; 
-            padding: 30px;
-            margin: 5px;
-        }
-        h1{
-            width: max-content;
-            border-radius:10px;
-            display: block;
-            margin: auto;
-            text-transform: uppercase;
-            background-color: rgba(0, 0, 255, 0.514);
-        }
-        h2{
-            width: max-content;
-            border-radius:10px;
-            display: block;
-            margin:20px auto;
-            text-transform: uppercase;
-            background-color: rgb(76, 76, 255);
-        }
-        img{
-            display: block;
-            width: 80vw;
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <article id="article1">
+        <article id="rowcollumandwrap">
             <h1>Row,collum and wrap</h1>
             <h2>row, wrap normal</h2>
             <div class="container1">
@@ -144,9 +49,9 @@
         <img src="Captura de Tela (71).png" alt="">
         <h1>Align-itens</h1>
         
-        <article>
+        <article id="align-content">
             <h2>flex-end</h2>
-            <div class="container10">
+            <div class="container1">
                 <div class="itens">Grupo flex 1</div>
                 <div class="itens">Grupo flex 2</div>
                 <div class="itens">Grupo flex 3</div>
@@ -155,7 +60,7 @@
             </div>
 
             <h2>flex-start</h2>
-            <div class="container20">
+            <div class="container2">
                 <div class="itens">Grupo flex 1</div>
                 <div class="itens">Grupo flex 2</div>
                 <div class="itens">Grupo flex 3</div>
@@ -164,7 +69,7 @@
             </div>
 
             <h2>stretch</h2>
-            <div class="container30">
+            <div class="container3">
                 <div class="itens">Grupo flex 1</div>
                 <div class="itens">Grupo flex 2</div>
                 <div class="itens">Grupo flex 3</div>
@@ -173,7 +78,7 @@
             </div>
 
             <h2>center</h2>
-            <div class="container40">
+            <div class="container4">
                 <div class="itens">Grupo flex 1</div>
                 <div class="itens">Grupo flex 2</div>
                 <div class="itens">Grupo flex 3</div>
@@ -182,7 +87,7 @@
             </div>
 
             <h2>space-between</h2>
-            <div class="container50">
+            <div class="container5">
                 <div class="itens">Grupo flex 1</div>
                 <div class="itens">Grupo flex 2</div>
                 <div class="itens">Grupo flex 3</div>
@@ -191,7 +96,7 @@
             </div>
 
             <h2>space-evenly</h2>
-            <div class="container60">
+            <div class="container6">
                 <div class="itens">Grupo flex 1</div>
                 <div class="itens">Grupo flex 2</div>
                 <div class="itens">Grupo flex 3</div>
@@ -200,12 +105,36 @@
             </div>
 
             <h2>space-around</h2>
-            <div class="container70">
+            <div class="container7">
                 <div class="itens">Grupo flex 1</div>
                 <div class="itens">Grupo flex 2</div>
                 <div class="itens">Grupo flex 3</div>
                 <div class="itens">Grupo flex 4</div>
                 <div class="itens">Grupo flex 5</div>
+            </div>
+        </article>
+        <article id="order">
+            <h1>order</h1>
+            <!--Order como o nome diz determina a ordem em que se aparece-->
+            <h2>5, 3, 1, 2, 4</h2>
+            <div class="container1">
+                <div class="itens" style="order: 3;">Grupo flex 1</div>
+                <div class="itens" style="order: 4;">Grupo flex 2</div>
+                <div class="itens" style="order: 2;">Grupo flex 3</div>
+                <div class="itens" style="order: 5;">Grupo flex 4</div>
+                <div class="itens" style="order: 1;">Grupo flex 5</div>
+            </div>           
+        </article>
+        <article id="align-self">
+            <h1>align-self</h1>
+            <!--É o align content só que individual para cada item-->
+            <h2>auto, flex-end, flex-start, center, stretch</h2>
+            <div class="container1">
+                <div class="itens" style="align-self: auto;">Grupo flex 1</div>
+                <div class="itens" style="align-self: flex-end;">Grupo flex 2</div>
+                <div class="itens" style="align-self: flex-start;">Grupo flex 3</div>
+                <div class="itens" style="align-self: center;">Grupo flex 4</div>
+                <div class="itens" style="align-self: stretch;">Grupo flex 5</div>
             </div>
         </article>
     </main>
