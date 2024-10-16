@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --fundo : #DEB887;
+    /*Aparentemente a linha é um degrade*/
+    --linha_baixo : #A52A2A;
+    --linha_cima:  #511414;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:black url(Fundo_cafe.jpg) center center no-repeat fixed ;
+    background-size: cover;
+    color: black;
+    font-family:'Lato', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#tudo{
+    background-color: var(--fundo);
+    margin: 10% 30%;
+}
+
+header, footer{
+    text-align: center;
+}
+
+h1{
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.527);
+    margin: 10px auto;
+    font-size: 40px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    
+}
+
+p{
+    display: flex;
+}
+
+.nome{
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+.preço{
+    flex: auto;
+    font-size: 20px;
+    margin: 5px 10px;
+    text-align: right;
+}
+
+.excessão{
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin: 10px auto;
+}
+
+.line{
+    width: 95%;
+    height: 3px;
+    margin: auto;
+    background-image: linear-gradient( to bottom, var(--linha_cima), var(--linha_baixo));
+}
+
+
