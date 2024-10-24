@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de registro</h1>
+        <h2>Favor preencher o formulario com as informações requeridas</h2>
+    </header>
+    <main>
+        <form action="cadastro.php">
+        <label for="inome">
+            <p>Primeiro nome</p>
+            <input required id="inome" type="text">
+        </label>
+        <label for="isobrenome">
+            <p>Sobrenome</p>
+            <input required id="isobrenome" type="text">
+        </label>
+        <label for="iemail">
+            <p>Email</p>
+            <input required id="iemail" type="text">
+        </label>
+        <label for="isenha">
+            <p>Nova senha</p>
+            <input required id="isenha" type="text">
+        </label>
+        <hr>
+        <p>Qual o seu tipo de conta</p>
+        <input class="tipo" name="type" type="radio"> Pessoal <br>
+        <input class="tipo" name="type" type="radio"> Empresarial
+        <hr>
+        <label for="ifoto">
+            <p>Foto de perfil </p>
+            <input id="ifoto" type="file"> <br>
+        </label>
+        <label for="iidade">
+            <p>Idade</p>
+            <input type="number"><br>
+        </label>
+        <label for="isobre_nos">
+            <p>Como ouviu falar de nós?</p>
+            <select name="sobre_nos" id="isobre_nos">
+                <option value="">(Selecione uma)</option>
+                <option value="">Noticias da freeCodeCamp</option>
+                <option value="">Youtube do freeCodeCamp</option>
+                <option value="">Fórum do freeCodeCamp</option>
+                <option value="">Other</option>
+            </select>
+        </label>
+        <label for="ibio">
+            <p>Sobre você</p>
+             <textarea name="bio" id="ibio" placeholder="Eu gosto de programar na praia..." cols="40" rows="10"></textarea> <br>
+        </label>
+        <label for="itermos">
+            <input id="itermos" type="checkbox"> Eu aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a>
+        </label id="isend">
+        <input id="isend" type="submit">
+        </form>
+    </main>
+</body>
+</html>
