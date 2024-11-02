@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de pesquisa</title>
+</head>
+<body>
+    <header>
+        <h1>
+            freeCodeCamp formulario de pesquisa
+        </h1>
+        <p>
+           Obrigado por você nos ajudar a melhorar a plataforma
+        </p>
+    </header>
+    <main>
+        <form action="post">
+            <section>
+                <label for="inome">
+                    <p>
+                        Nome
+                    </p>
+                    <input id="inome" placeholder="Coloque seu nome" type="text">
+                </label>
+                <label for="iemail">
+                        <p>
+                            Email
+                        </p>
+                        <input id="iemail" placeholder="Coloque seu Email" type="text">
+                </label>
+                <label for="iidade">
+                        <p>
+                            Idade <span class="parenteses">(opcional)</span>
+                        </p> 
+                        <input id="iidade" placeholder="idade" type="text">
+                </label>
+                <label for="ifuncao">
+                    <p>
+                        Qual opção melhor descreve sua função atual?
+                    </p>
+                    <select id="ifuncao">
+                        <option value="">Estudante</option>
+                        <option value="">Trabalho de tempo integral</option>
+                        <option value="">Estudante de tempo integral</option>
+                        <option value="">Prefiro não falar</option>
+                        <option value="">Outro</option>
+                    </select>
+                </label>
+            </section>
+            <section class="botaog">
+                <p>
+                    Você recomendaria  o freeCodeCamp para um amigo?
+                </p> 
+                <label for="icerteza"> 
+                    <input name="recomendação" class="botao" id="icerteza" type="radio"> Com certeza <br>
+                </label>
+                <label for="italvez">
+                    <input name="recomendação" class="botao" type="radio"> Talvez <br>
+                </label>
+                <label for="isla">
+                    <input name="recomendação" class="botao" type="radio"> Não tenho certeza <br>
+                </label>
+            </section>
+            <section >
+                <label for="irecurso">
+                    <p>
+                        Qual o seurecurso favorito do freeCodeCamp 
+                    </p>
+                    <select id="irecurso">
+                        <option value="">Desafios</option>
+                        <option value="">Projetos</option>
+                        <option value="">Comunidade</option>
+                        <option value="">Código aberto</option>
+                    </select>
+                </label>
+            </section>
+            <section class="botaog">
+                <p>
+                    O que você gostaria que melhorasse? <span class="parenteses">(Marque todas as opções aplicaveis)</span>
+                </p>
+                <label for="Front-end Projects">
+                    <input class="botao" id="Front-end Projects" type="checkbox"> Front-end Projects <br>
+                </label>
+                <label for="Back-end Projects">
+                    <input class="botao" id="Back-end Projects" type="checkbox"> Back-end Projects <br>
+                </label>
+                <label for="Data Visualization">
+                    <input class="botao" id="Data Visualization" type="checkbox"> Data Visualization <br>
+                </label>
+                <label for="Challenges">
+                    <input class="botao" id="Challenges" type="checkbox"> Challenges <br>
+                </label>
+                <label for="Open Source Community">
+                    <input class="botao" id="Open Source Community" type="checkbox"> Open Source Community <br>
+                </label>
+                <label for="Gitter help rooms">
+                    <input class="botao" id="Gitter help rooms" type="checkbox"> Gitter help rooms <br>
+                </label>
+                <label for="Videos">
+                    <input class="botao" id="Videos" type="checkbox"> Videos <br>
+                </label>
+                <label for="City Meetups">
+                    <input class="botao" id="City Meetups" type="checkbox"> City Meetups <br>
+                </label>
+                <label for="Wiki">
+                    <input class="botao" id="Wiki" type="checkbox"> Wiki <br>
+                </label>
+                <label for="Forum">
+                    <input class="botao" id="Forum" type="checkbox"> Forum <br>
+                </label>
+                <label for="Additional Courses">
+                    <input class="botao" id="Additional Courses" type="checkbox"> Additional Courses <br>
+                </label>
+            </section>
+            <section>
+                    <p>
+                        Algum comentario ou sugestão?
+                    </p> 
+                    <textarea placeholder="Coloque seu comentario aqui..." name="" id=""></textarea>
+                <input id="enviar" type="submit" value="Enviar">
+            </section>
+        </form>
+    </main>
+</body>
+</html>
