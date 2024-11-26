@@ -1,0 +1,112 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 90%;
+    background-color: #1B1B32;
+    position: fixed;
+    top: 0%;
+}
+
+header > h1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+img{
+    display: block;
+    height: 32px;
+}
+
+#titulo{
+    color: #F1BE32;
+}
+
+#nav{
+    display: inline-block;
+    
+}
+
+#nav > a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+article{
+    margin: 20px;
+}
+
+article > h1{
+    border-bottom:3px solid rgba(128, 128, 128, 0.555) ;
+}
+
+section{
+    margin: 20px;
+}
+
+h1{
+    color: #1B1B32;
+    font-size: 2em;
+}
+
+p{
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+form , select, textarea{
+    margin:0px 10px;
+}
+
+input{
+    width: 30%;
+}
+
+.q1, .q2{
+    width: auto;
+}
+
+textarea{
+    width: 300px;
+    height: 150px;
+}
+
+#botao{
+    display: block;
+    height: 50px;
+    margin: 20px auto;
+    border: 3px solid #1B1B32;
+
+}
+
+#botao:active{
+    background-color: #1B1B32;
+}
+
+footer{
+    text-align: center;
+    background-color: #1B1B32;
+    font-size: 1em;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questionário HTML/CSS</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="FreeCodeCamp_logo.png" alt=""> <span id="titulo">Questionário HTML/CSS</span> <span id="nav">
+                <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-1#student-info">INFO</a>
+                <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-1#html-questions">HTML</a>
+                <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-1#css-questions">CSS</a>
+            </span>
+        </h1>
+    </header>
+    <main>
+        <article>
+            <h1>Informações do aluno</h1>
+            <section>
+                <form action="post">
+                    <p>Nome: <input required type="text"></p>
+                    <p>Email: <input required type="email"></p>
+                    <p>Data de nascimento <input required type="date"></p>
+                </form>
+            </section>
+        </article>
+        <article>
+            <h1>HTML</h1>
+            <section>
+                <h1>Questão #1</h1>
+                <p>O elemento legend representa uma legenda para o conteúdo de seu elemento pai fieldset</p>
+                <form action="post">
+                    <input required class="q1" name="q1" type="radio"> Verdadeiro <br>
+                    <input required class="q1" name="q1" type="radio"> Falso
+                </form>
+            </section>
+            <section>
+                <h1>Questão #2</h1>
+                <p>Quando um elemento label é usado para descrever um campo de entrada input, ele deve usar o atributo for com um valor correspondente ao atributo id do elemento input. Isso garante acessibilidade e melhora a usabilidade.</p>
+                <form action="post">
+                    <input required class="q2" name="q2" type="radio"> Verdadeiro <br>
+                    <input required class="q2" name="q2" type="radio"> Falso
+                </form>
+            </section>
+        </article>
+        <article>
+            <h1>CSS</h1>
+            <section>
+                <p>A propriedade de margem CSS pode aceitar valores negativos?</p>
+                <select name="" id="">
+                    <option value="">Select a option</option>
+                    <option value="">Verdadeiro</option>
+                    <option value="">Falso</option>
+                </select>
+            </section>
+            <section>
+                <p>Você tem alguma duvida:</p>
+                <textarea name="" id=""></textarea>
+            </section>
+        </article>
+        <input id="botao" type="submit">
+    </main>
+    <footer>
+        <p><a href="https://freecodecamp.org/"></a>freecodecamp</p>
+        <p>San Francisco</p>
+        <p>California</p>
+        <p>USA</p>
+    </footer>
+</body>
+</html>
