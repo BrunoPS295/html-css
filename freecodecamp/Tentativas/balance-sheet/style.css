@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root{
+    --cinza:#D0D0D5; 
+    --preto:#0A0A23;
+    --azul:#3570BE;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container1, #container2, #preto{
+    width: 570px;
+    margin: auto;
+}
+
+#container1, #container2{
+    border: 2px solid var(--cinza);
+    padding: 20px 30px;
+}
+
+#container1{
+    margin-top: 20px;
+    border-bottom: 0px;
+}
+
+#container2{
+    margin-bottom: 20px;
+    border-top: 0px;
+}
+
+#preto{
+    position: sticky;
+    top: 0;
+    background-color: var(--preto);
+    color: white;
+    border: 2px solid var(--preto);
+    padding: 0px 30px;
+    text-align: right;
+}
+
+#a1{
+    border-top: 0px;
+}
+
+#afim{
+    border-bottom: 0px;
+}
+
+header{
+    font-weight: bold;
+}
+
+h3{
+    color: var(--azul);
+}
+
+p{
+    padding: 2px;
+    margin: 10px 0px;
+}
+
+article{
+    border-bottom: 1px solid var(--preto);
+    border-top: 1px solid var(--preto);
+    margin: 2px 0px;
+}
+
+.cinza, .Total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.cinza{
+    background-color: var(--cinza);
+}
+
+.Total:hover{
+    background-color: #3570beb2;
+}
+
+.data_preço{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.cinza > .data_preço{
+    font-weight: normal;
+}
+
+
+
+
+
