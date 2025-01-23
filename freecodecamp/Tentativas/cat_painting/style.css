@@ -1,0 +1,222 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #C9D2FC;
+}
+
+#rosto{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 250px;
+    height:250px;
+    background-image: linear-gradient( #5E5E5E, #5E5E5E, #46464F 230px);
+}
+
+.orelha_esquerda{
+    position: absolute;
+    top: calc(40% - 103px);
+    left: calc(40% - 58px);
+    transform: rotate(-220deg);
+    border: 70px solid transparent;
+    border-top: 100px solid #5E5E5E;
+    margin: auto;
+}
+
+.fundo_orelha_esquerda{
+    position: absolute;
+    top: calc(40% - 68px);
+    left: calc(40% - 25px);
+    transform: rotate(139.5deg);
+    border: 46px solid transparent;
+    border-top: 72px solid #46464F;
+}
+
+.orelha_direita{
+    position: absolute;
+    top: calc(40% - 103px);
+    left: calc(40% + 170px);
+    transform: rotate(220deg);
+    border: 70px solid transparent;
+    border-top: 100px solid #5E5E5E;
+}
+
+.fundo_orelha_direita{
+    position: absolute;
+    top: calc(40% - 68px);
+    left: calc(40% + 186px);
+    transform: rotate(-139.5deg);
+    border: 46px solid transparent;
+    border-top: 72px solid #46464F;
+}
+
+.olho_esquerdo{
+    position: absolute;
+    top: calc(40% - 50px);
+    left: calc(40% - 56px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.fundo_olho_esquerdo{
+    position: absolute;
+    top: calc(40% - 20px);
+    left: calc(40% - 17px);
+    transform: rotate(33deg);
+    width: 19px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.olho_direito{
+    position: absolute;
+    top: calc(40% - 50px);
+    left: calc(40% + 47px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.fundo_olho_direito{
+    position: absolute;
+    top: calc(40% - 20px);
+    left: calc(40% + 10px);
+    transform: rotate(-33deg);
+    width: 19px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.nariz{
+    position: absolute;
+    top: calc(40% - -40px);
+    left: calc(40% - 5.3px);
+    border-radius: 30px;
+    border: 30px solid transparent;
+    border-top: 20px solid #442C2C;
+    z-index: 2;
+}
+
+.tampão_esquerdo{
+    position: absolute;
+    top: calc(40% - -43px);
+    left: calc(40%);
+    transform: rotate(20deg);
+    width: 31px;
+    height: 14px;
+    background-image: linear-gradient(to top, #555558, #5A5A5C);
+    z-index: 1;
+}
+
+.tampão_direito{
+    position: absolute;
+    top: calc(40% - -43px);
+    left: calc(40% + 18px);
+    transform: rotate(-20deg);
+    width: 31px;
+    height: 14px;
+    background-image: linear-gradient(to top, #555558, #5A5A5C);
+    z-index: 1;
+}
+
+.boca_esquerda{
+    position: absolute;
+    top: calc(40% - -43px);
+    left: calc(40% - 2px);
+    border-radius: 50%;
+    width: 28px;
+    height: 30px;
+    border: 2px solid black;
+    z-index: 0;
+}
+
+.boca_direita{
+    position: absolute;
+    top: calc(40% - -43px);
+    left: calc(40% + 23px);
+    border-radius: 50%;
+    width: 28px;
+    height: 30px;
+    border: 2px solid black;
+    z-index: 0;
+}
+
+.L_fio1{
+    position: absolute;
+    top: calc(40% - -36px);
+    left: calc(40% + 53px);
+    transform: rotate(-10deg);
+    width: 90px;
+    height: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.L_fio2{
+    position: absolute;
+    top: calc(40% - -50px);
+    left: calc(40% + 53px);
+    width: 90px;
+    height: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.L_fio3{
+    position: absolute;
+    top: calc(40% - -64px);
+    left: calc(40% + 53px);
+    transform: rotate(10deg);
+    width: 90px;
+    height: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.R_fio1{
+    position: absolute;
+    top: calc(40% - -64px);
+    left: calc(40% - 95px);
+    transform: rotate(-10deg);
+    width: 90px;
+    height: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.R_fio2{
+    position: absolute;
+    top: calc(40% - -50px);
+    left: calc(40% - 95px);
+    width: 90px;
+    height: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.R_fio3{
+    position: absolute;
+    top: calc(40% - -36px);
+    left: calc(40% - 95px);
+    transform: rotate(10deg);
+    width: 90px;
+    height: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
+
