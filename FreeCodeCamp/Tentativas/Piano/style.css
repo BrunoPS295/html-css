@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+:root{
+    --verde:#00471B;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+}
+
+#corpo{
+    background-color: var(--verde);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 350px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.fundo{
+    position: relative;
+    top: calc(50% + 30px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    width: 700px;
+    height: 250px;
+    padding: 3px;
+}
+
+.tecla{
+    background-color: #fff;
+    width: 45px;
+    height: 250px;
+}
+
+.sub_teclas > div{
+    position: absolute;
+    top: calc(50% - 128px);
+    transform: translate(-50%);
+    background-color: #000;
+    width: 40px;
+    height: 120px;
+    z-index: 1;
+}
+
+.sub_tecla1{
+    left: calc(50% - 298px);
+}
+.sub_tecla2{
+    left: calc(50% - 248px);
+}
+.sub_tecla3{
+    left: calc(50% - 148px);
+}
+.sub_tecla4{
+    left: calc(50% - 98px);
+}
+.sub_tecla5{
+    left: calc(50% - 48px);
+}
+.sub_tecla6{
+    left: calc(50% + 52px);
+}
+.sub_tecla7{
+    left: calc(50% + 102px);
+}
+.sub_tecla8{
+    left: calc(50% + 202px);
+}
+.sub_tecla9{
+    left: calc(50% + 252px);
+}
+.sub_tecla10{
+    left: calc(50% + 302px);
+}
+
+p{
+    height: 20px;
+    font-size: 20px;
+}
+
+img{
+    position: relative;
+    top: 3.4px;
+}
+
+
