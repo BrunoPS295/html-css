@@ -35,10 +35,14 @@
     padding: 3px;
 }
 
-.tecla{
+.tecla, .sumido{
     background-color: #fff;
     width: 45px;
     height: 250px;
+}
+
+.sub_teclas{
+    width: 0px;
 }
 
 .sub_teclas > div{
@@ -66,19 +70,19 @@
 .sub_tecla5{
     left: calc(50% - 48px);
 }
-.sub_tecla6{
+.sub_tecla6.sumido{
     left: calc(50% + 52px);
 }
-.sub_tecla7{
+.sub_tecla7.sumido{
     left: calc(50% + 102px);
 }
-.sub_tecla8{
+.sub_tecla8.sumido{
     left: calc(50% + 202px);
 }
-.sub_tecla9{
+.sub_tecla9.sumido{
     left: calc(50% + 252px);
 }
-.sub_tecla10{
+.sub_tecla10.sumido{
     left: calc(50% + 302px);
 }
 
@@ -90,6 +94,36 @@ p{
 img{
     position: relative;
     top: 3.4px;
+}
+
+@media (max-width:800px){
+    #corpo{
+        width: 358px;
+    }
+
+    .fundo{
+        width: 350px;
+    }
+
+    .sumido{
+        display: none;
+    }
+
+    .sub_tecla1{
+        left: calc(50% + 127px - 250px);
+    }
+    .sub_tecla2{
+        left: calc(50% + 127px - 200px);
+    }
+    .sub_tecla3{
+        left: calc(50% + 127px - 100px);
+    }
+    .sub_tecla4{
+        left: calc(50% + 127px - 50px);
+    }
+    .sub_tecla5{
+        left: calc(50% + 127px);
+    }
 }
 
 
