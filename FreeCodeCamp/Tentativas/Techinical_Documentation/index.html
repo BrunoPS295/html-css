@@ -7,27 +7,25 @@
     <title>Documento técnico</title>
 </head>
 <body>
-    <header>
+    <nav>
         <h1>
-            Documentação de JS
+            Documentação JS
         </h1>
-        <nav>
-            <a class="bloco_link" href="#introducao">Introdução</a>
-            <a class="bloco_link" href="#sabo">O que você já de saber</a>
-            <a class="bloco_link" href="#js_j">JavaScript e Java</a>
-            <a class="bloco_link" href="#ola_mundo">Olá mundo</a>
-            <a class="bloco_link" href="#var">Variáveis</a>
-            <a class="bloco_link" href="#declarar_var">Declarar variáveis</a>
-            <a class="bloco_link" href="#var_scope">Escopo de variáveis</a>
-            <a class="bloco_link" href="#global_var">Variáveis globais</a>
-            <a class="bloco_link" href="#const">Constantes</a>
-            <a class="bloco_link" href="#tipos_dados">Tipos de dados</a>
-            <a class="bloco_link" href="#elif">Introdução if...else</a>
-            <a class="bloco_link" href="#while">Introdução While</a>
-            <a class="bloco_link" href="#function">Declaração de funções</a>
-            <a class="bloco_link" href="#referencia">Referências</a>
-        </nav>
-    </header>
+        <a class="bloco_link" href="#introducao">Introdução</a>
+        <a class="bloco_link" href="#sabo">O que você já de saber</a>
+        <a class="bloco_link" href="#js_j">JavaScript e Java</a>
+        <a class="bloco_link" href="#ola_mundo">Olá mundo</a>
+        <a class="bloco_link" href="#var">Variáveis</a>
+        <a class="bloco_link" href="#declarar_var">Declarar variáveis</a>
+        <a class="bloco_link" href="#var_scope">Escopo de variáveis</a>
+        <a class="bloco_link" href="#global_var">Variáveis globais</a>
+        <a class="bloco_link" href="#const">Constantes</a>
+        <a class="bloco_link" href="#tipos_dados">Tipos de dados</a>
+        <a class="bloco_link" href="#elif">Introdução if...else</a>
+        <a class="bloco_link" href="#while">Introdução While</a>
+        <a class="bloco_link" href="#function">Declaração de funções</a>
+        <a class="bloco_link" href="#referencia">Referências</a>
+    </nav>
     <main>
         <section id="introducao">
             <h1>Introdução</h1>
@@ -85,7 +83,7 @@
                 Para começar a escrever JavaScript, abra o Scratchpad e escreva seu primeiro código "Hello world" em JavaScript:
             </p>
             <div class="code">
-                function greetMe(yourName) { alert("Hello " + yourName); }  
+                function greetMe(yourName) { alert("Hello " + yourName); }  <br>
                 greetMe("World"); 
             </div>
             <p>
@@ -155,7 +153,7 @@
                 Esse comportamento muda quando se usa a declaração let, introduzida no ECMAScript 2015.
             </p>
             <div class="code">
-                if (true) { let y = 5; } console.log(y); // ReferenceError: y is 
+                if (true) { let y = 5; } console.log(y); // ReferenceError: y is <br>
                 not defined
             </div>
         </section>
@@ -190,22 +188,22 @@
                 Você não pode declarar uma constante com o mesmo nome de uma função ou variável no mesmo escopo. Por exemplo:
             </p>
             <div class="code">
-                // ISSO CAUSARÁ UM ERRO
-                function f() {};  
-                const f = 5;  
-
-                // ISSO TAMBÉM CAUSARÁ UM ERRO
-                function f() {  
-                    const g = 5;  
-                    var g;  
-                    // declarações  
+                // ISSO CAUSARÁ UM ERRO <br>
+                function f() {};  <br>
+                const f = 5;  <br>
+                <br>
+                // ISSO TAMBÉM CAUSARÁ UM ERRO <br>
+                function f() {  <br>
+                    const g = 5;  <br>
+                    var g;  <br>
+                    // declarações  <br>
                 }
             </div>
             <p>
                 No entanto, os atributos de objetos não são protegidos, então a seguinte declaração será executada sem problemas:
             </p>
             <div class="code">
-                const MEU_OBJETO = {"chave": "valor"};  
+                const MEU_OBJETO = {"chave": "valor"};  <br>
                 MEU_OBJETO.chave = "outroValor";
             </div>
         </section>
@@ -256,10 +254,10 @@
                 Use a instrução if para executar um bloco de código se uma condição lógica for verdadeira. Use a cláusula opcional else para executar um bloco de código se a condição for falsa. Uma instrução if se parece com o seguinte:
             </p>
             <div class="code">
-                if (condição) {  
-                    declaração_1;  
-                  } else {  
-                    declaração_2;  
+                if (condição) {  <br>
+                    declaração_1;  <br>
+                  } else {  <br>
+                    declaração_2;  <br>
                   }
             </div>
             <p>
@@ -269,14 +267,14 @@
                 
             </p>
             <div class="code">
-                if (condição_1) {  
-                    declaração_1;  
-                  } else if (condição_2) {  
-                    declaração_2;  
-                  } else if (condição_n) {  
-                    declaração_n;  
-                  } else {  
-                    declaração_final;  
+                if (condição_1) {  <br>
+                    declaração_1;  <br>
+                  } else if (condição_2) {  <br>
+                    declaração_2;  <br>
+                  } else if (condição_n) {  <br>
+                    declaração_n;  <br>
+                  } else {  <br>
+                    declaração_final;  <br>
                   } 
             </div>
             <p>
@@ -286,12 +284,12 @@
                 Em geral, é uma boa prática sempre usar blocos {} ao aninhar instruções if:
             </p>
             <div class="code">
-                if (condição) {  
-                    declaração_1_é_executada_se_condição_for_verdadeira;  
-                    declaração_2_é_executada_se_condição_for_verdadeira;  
-                  } else {  
-                    declaração_3_é_executada_se_condição_for_falsa;  
-                    declaração_4_é_executada_se_condição_for_falsa;  
+                if (condição) {  <br>
+                    declaração_1_é_executada_se_condição_for_verdadeira;  <br>
+                    declaração_2_é_executada_se_condição_for_verdadeira;  <br>
+                  } else {  <br>
+                    declaração_3_é_executada_se_condição_for_falsa;  <br>
+                    declaração_4_é_executada_se_condição_for_falsa;  <br>
                   }
             </div>
             <p>
@@ -333,11 +331,11 @@
                 O seguinte loop while itera enquanto n for menor que 3:
             </p>
             <div class="code">
-                var n = 0;  
-                var x = 0;  
-                while (n < 3) {  
-                    n++;  
-                    x += n;  
+                var n = 0;  <br>
+                var x = 0;  <br>
+                while (n < 3) {  <br>
+                    n++;  <br>
+                    x += n;  <br>
                 }
             </div>
             <p>
@@ -380,8 +378,8 @@
                 Por exemplo, o código a seguir define uma função simples chamada
             </p>
             <div class="code">
-                function quadrado(numero) {  
-                    return numero * numero;  
+                function quadrado(numero) {  <br>
+                    return numero * numero;  <br>
                   }
             </div>
             <p>
