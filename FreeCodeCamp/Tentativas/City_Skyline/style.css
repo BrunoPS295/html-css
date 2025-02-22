@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background:radial-gradient(circle at 20% 20%, rgb(67,67,84) 15%, rgb(34,34,51) 80%);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+#lua{
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #CCCCCC;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
