@@ -275,9 +275,139 @@ body{
     margin: auto;
 }
 
+#p8{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
 
+#p8_topo{
+    border:20px solid transparent;
+    border-left:60px solid black;
+    border-bottom: 8px solid black;
+}
 
-
-
-
+#p8_corpo{
+    width: 80px;
+    height: 400px;
+    background-color: #000;
+    padding-bottom: 100px;
     
+}
+
+#p8_l{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    width: 40px;
+    height: 400px;
+}
+
+#p8_r{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    width: 40px;
+    height: 400px;
+}
+
+.p8_l_bola{
+    background-color: var(--cinza);
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.p8_r_bola{
+    margin: auto;
+    background-color: var(--cinza);
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#p9{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 57%;
+    transform: translate(-50%);
+    z-index: -2;
+}
+
+#p9_topo{
+    background-color: #000;
+    width: 5px;
+    height: 70px;
+    margin: auto;
+}
+
+#p9_cobertura{
+    width: 180px;
+    height: 50px;
+    background-color: #000;
+    margin: auto;
+}
+
+#p9_corpo{
+    display: flex;
+    width: 200px;
+    height: 500px;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.p9_linha{
+    background-color: var(--cinza);
+    width: 40px;
+    height: 450px;
+    margin-top: 25px;
+}
+
+#p10{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+    transform: translate(-50%);
+}
+
+#p10_corpo{
+    width: 100px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.p10_linha_v{
+    width: 20px;
+    height: 250px;
+    background-color: var(--cinza);
+    margin: 25px 0px;
+}
+
+.p10_linha_h{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 25px;
+    background-color: #000;
+}
+
+#p10_linha_h_1{
+    top: calc(50% + 45px);
+}
+
+#p10_linha_h_2{
+    top:calc(50% - 45px);
+}
