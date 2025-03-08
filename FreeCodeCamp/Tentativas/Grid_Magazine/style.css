@@ -1,0 +1,131 @@
+@charset "UTF-8";
+:root{
+    --back:#141E28;
+    --text_orange:#FF4500;
+    --text_blue:#00B9D5;
+    --text_white:#FAF0E6;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text_white);
+}
+
+body{
+    background-color: var(--back);
+    max-width: 1000px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+#freecodecamp_big > img{
+    display: block;
+    width: 95vw;
+    margin: auto;
+}
+
+#title > *{
+    display: block;
+    text-align: center;
+    color: var(--text_orange);
+}
+
+#title > h1{
+    font-size: 3rem;
+}
+
+#add_info{
+    display: block;
+    padding: 20px  0;
+    height: 60px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+#who{
+    width: 40%;
+    float: left;
+}
+
+#who a:hover{
+    background-color: rgba(0, 128, 0, 0.712);
+}
+
+#gray{
+    color:gray;
+}
+
+nav {
+    display: block;
+    width: 60%;
+    float: right;
+}
+
+nav >  a{
+    float: right;
+}
+
+#main_section{
+    column-gap: 20px;
+    column-count: 3;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#big{
+    width: 2rem;
+    font-size: 3rem;
+    float: left;
+    color: var(--text_orange);
+}
+
+.big_blue{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin: 5px 0px;
+    color: var(--text_blue);
+}
+
+#l_section{
+    display: block;
+    float: left;
+    width: 33%;
+    text-align: justify;
+    margin: -20px 0px;
+}
+
+#l_section h2, h3{
+    color: var(--text_blue);
+}
+
+#l_section > div{
+    margin: 20px 0px;
+}
+
+#r_section{
+    width: 60%;
+    float: right;
+}
+
+#r_section > div{
+    float: right;
+    margin: 10px 0px;
+}
+
+#r_section img{
+    width: 100%;
+}
+
+#calc_blue > img{
+    width: 70%;
+    float: left;
+}
+
