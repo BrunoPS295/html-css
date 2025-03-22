@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Logo">
+        <div>
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Logo">
+        </div>
         <nav>
             <a href="#sobre">Sobre</a>
             <a href="#como_trabalhamos">Como trabalhamos</a>
@@ -16,36 +19,45 @@
     </header>
     <main>
         <form action="post">
-            <p>
-                Obras-primas artesanais e caseiras
-            </p>
-            <input type="email" required>
-            <input type="submit" value="Começar">
+            <h2>
+                Obras-primas, artesanais e caseiras
+            </h2> <br>
+            <input type="email" required> <br>
+            <input class="button" type="submit" value="Começar">
         </form>
         <section id="sobre">
-            <div>
-                <h2>
-                    Materiais Premium
-                </h2>
-                <p>
-                    Nossos trombones usam o latão mais brilhante que é adquirido localmente. Isso aumentará a longevidade da sua compra.
-                </p>
+            <div id="material">
+                
+                <div>
+                    <h2>
+                        Materiais Premium
+                    </h2>
+                    <p>
+                        Nossos trombones usam o latão mais brilhante que é adquirido localmente. Isso aumentará a longevidade da sua compra.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>
-                    Envio Rápido
-                </h2>
-                <p>
-                    Garantimos que você receba seu trombone assim que terminamos de fazê -lo. Também fornecemos retornos gratuitos se você não estiver satisfeito.
-                </p>
+            <div id="entrega">
+                
+                <div>
+                    <h2>
+                        Envio Rápido
+                    </h2>
+                    <p>
+                        Garantimos que você receba seu trombone assim que terminamos de fazê -lo. Também fornecemos retornos gratuitos se você não estiver satisfeito.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>
-                    Garantia de qualidade
-                </h2>
-                <p>
-                    Para cada compra que você faz, garantiremos que não haja danos ou falhas e verificaremos e testaremos o tom do seu instrumento.
-                </p>
+            <div id="qualidade">
+                
+                <div>
+                    <h2>
+                        Garantia de qualidade
+                    </h2>
+                    <p>
+                        Para cada compra que você faz, garantiremos que não haja danos ou falhas e verificaremos e testaremos o tom do seu instrumento.
+                    </p>
+                </div>
             </div>
         </section>
         <section id="como__trabalhamos">
@@ -53,13 +65,43 @@
         </section>
         <section id="precos">
             <div>
-
+                <h2>
+                    Trombone Tenor
+                </h2>
+                <h1>
+                    $600
+                </h1>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <input type="button" value="selecionar" class="button" id="select">
             </div>
             <div>
-
+                <h2>
+                    Trombone Tenor
+                </h2>
+                <h1>
+                    $600
+                </h1>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <input type="button" value="selecionar" class="button" id="select">
             </div>
             <div>
-
+                <h2>
+                    Trombone Tenor
+                </h2>
+                <h1>
+                    $600
+                </h1>
+                <p>Toca semelhante a um trompete</p>
+                <p>Excelente para bandas de jazz</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <input type="button" value="selecionar" class="button" id="select">
             </div>
         </section>
     </main>

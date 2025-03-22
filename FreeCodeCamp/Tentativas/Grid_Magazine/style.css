@@ -22,6 +22,7 @@ body{
 
 #freecodecamp_big > img{
     display: block;
+    max-width: 1000px;
     width: 95vw;
     margin: auto;
 }
