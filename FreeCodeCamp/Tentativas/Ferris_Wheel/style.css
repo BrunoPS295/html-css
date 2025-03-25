@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@keyframes whell{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes block{
+    0% {background-color: yellow;}
+    25%{background-color: red; }
+    50%{background-color: yellow;}
+    75%{background-color: purple; }
+    100% {background-color: yellow;}
+
+    0%{transform: rotate(-0deg);}
+    25%{transform: rotate(-90deg);}
+    50%{transform: rotate(-180deg);}
+    75%{transform: rotate(-270deg);}
+    100%{transform: rotate(-360deg);}
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-items: center;
+    height: 100vh;
+}
+
+#roda{
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid black;
+    animation: whell 20s linear infinite;
+    will-change: transform;
+}
+
+#miolo{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.line{
+    position: relative;
+    top: 49%;
+    left: -0.8%;
+    width: 505px;
+    height: 2px;
+    background:linear-gradient(to left, black 50%, transparent 50%);
+}
+
+#line1{
+    transform: rotate(60deg);  
+}
+#line2{
+    transform: rotate(120deg);  
+}
+#line3{
+    transform: rotate(180deg);  
+}
+#line4{
+    transform: rotate(240deg);  
+}
+#line5{
+    transform: rotate(300deg);  
+}
+#line6{
+    transform: rotate(360deg);  
+}
+
+.block{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: yellow;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    animation: block 10s linear 0s infinite normal none;
+    animation-name: block;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    will-change: transform;
+    z-index: 1;
+    transform-origin: top;
+}
+
+#block1{
+    top: calc(40% + 250px);
+    left: calc(40% + 120px);
+}
+#block2{
+    top: calc(40% + 250px);
+    left: calc(40% + -120px);
+}
+#block3{
+    top: calc(40% + 55px);
+    left: calc(40% + 250px);
+}
+#block4{
+    top: calc(40% + 50px);
+    left: calc(40% + -250px);
+}
+#block5{
+    top: calc(40% + -160px);
+    left: calc(40% + 120px);
+}
+#block6{
+    top: calc(40% + -160px);
+    left: calc(40% + -120px);
+}
+
