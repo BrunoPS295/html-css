@@ -6,10 +6,12 @@
     --begin_ice:#CAF1E5;
     --end_ice:#56BAFE;
 
-    --begin_dark_pingu:#DCDDD3;
-    --end_dark_pingu:#868686;
-    --begin_light_pingu:#FFFFFF;
-    --end_light_pingu:#C3C1C1;
+    --begin_head_arm_pingu:#DCDDD3;
+    --end_head_arm_pingu:#868686;
+    --begin_chest_pingu:#C3C1C1;
+    --end_chest_pingu:#FFFFFF;
+    --pink:#FFC0CB;
+    --mouth_foot:#FFA500;
 
     --begin_water:#B6FFFF;
     --end_water:#58AFEC;
@@ -79,4 +81,123 @@ body{
 
 #pingu{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#head{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 140px;
+    border-radius: 45%;
+    background: radial-gradient(circle at top right, var(--begin_head_arm_pingu), var(--end_head_arm_pingu) 60%);
+    position: absolute;
+    top: -72%;
+    left: 0%;
+}
+
+.face{
+    background-color: #fff;
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#l_face{
+    left: 30%;
+    border-radius: 45% 45% 10% 50%;
+}
+
+#mid_face{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 45%;
+}
+
+#r_face{
+    left: 70%;
+    border-radius: 45% 45% 50% 10%;
+}
+
+#chest{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 140px;
+    border-radius: 45%;
+    background:radial-gradient(circle at bottom left, var(--begin_chest_pingu) 15%, var(--end_chest_pingu) 35%) ;
+    z-index: -1;
+}
+
+#neck{
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 60px;
+    border-radius: 45%;
+    background-color: var(--end_head_arm_pingu);
+}
+
+#chest_text{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--end_head_arm_pingu);
+}
+
+.arm{
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--begin_head_arm_pingu), var(--end_head_arm_pingu));
+    position: absolute;
+    margin: auto;
+    z-index: -2;
+}
+
+#l_arm{
+    left: -45%;
+    transform: rotate(45deg);
+    transform-origin: right;
+    clip-path: ellipse(100% 100% at top right);
+}
+
+#r_arm{
+    left: 69%;
+    transform: rotate(45deg);
+    transform-origin: left;
+    clip-path: ellipse(100% 100% at top left);
+}
+
+.foot{
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: var(--mouth_foot);
+    margin: auto;
+    position: absolute;
+    top: 95%;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+#l_foot{
+    left: calc(35% - 40px);
+    transform: rotate(340deg);
+}
+
+#r_foot{
+    left: calc(35% + 40px);
+    transform: rotate(20deg);
 }
