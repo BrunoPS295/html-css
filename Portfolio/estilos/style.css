@@ -208,11 +208,11 @@ li{
     margin: 30px 0px;
 }
 
-#td, #quiz, #alan{
+#td, #quiz{
     display: block;
     flex-direction: row;
 }
 
-#fw, #android{
+#fw, #android, #alan{
     flex-direction: row-reverse;
 }

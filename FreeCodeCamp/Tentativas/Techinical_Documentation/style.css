@@ -58,3 +58,26 @@ li{
     font-family: monospace;
 }
 
+@media (max-width:1440px){
+    nav{
+        width: 30vw;
+    }
+    main{
+        width: 65vw;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:800px) {
+    nav{
+        width: 40vw;
+    }
+    main{
+        width: 55vw;
+        margin-right: 0px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+
