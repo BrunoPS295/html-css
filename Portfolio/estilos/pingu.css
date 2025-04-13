@@ -222,3 +222,10 @@
     left: calc(35% + 40px);
     transform: rotate(20deg);
 }
+
+@media (max-width:650px) {
+    #pingu{
+        position: absolute;
+        top: 110%;
+    }
+}

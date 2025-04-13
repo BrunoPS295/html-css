@@ -72,6 +72,11 @@ li{
     nav{
         width: 40vw;
     }
+    nav > h1{
+        font-size: 2rem;
+        padding: 0px;
+        text-align: center;
+    }
     main{
         width: 55vw;
         margin-right: 0px;

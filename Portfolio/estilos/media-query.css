@@ -1,3 +1,44 @@
-@media (max-width:1000px){
+@charset "UTF-8";
+@media (max-width:650px) {
+    main{
+        width: 100%;
+    }
+    #sobre{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #bar nav{
+        display: none;
+    }
     
 }
+
+@media (max-width:1000px) {
+    main{
+        width: 95%;
+    }
+    #sobre{
+        padding-top: 40px;
+    }
+    #bar > nav > a{
+        display: block;
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+    #bar > nav{
+        column-count: 2;
+        margin-top: 5px;
+        margin-right: 50px;
+        float: right;
+    }
+    #_skills  div:active p{
+        display: block;
+        opacity: 1;
+    }
+    
+    #_skills > div:active img{
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+}
+
