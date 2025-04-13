@@ -34,7 +34,7 @@
 }
 
 #d{
-    top:215%;
+    top:200%;
 }
 
 #container{
@@ -177,6 +177,10 @@ li{
 
 #projetos{
     padding-bottom: 50px;
+}
+
+#projetos p{
+    font-size: 1.2rem;
 }
 
 #projetos img{
