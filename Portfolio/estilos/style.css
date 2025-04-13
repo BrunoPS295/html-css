@@ -6,6 +6,7 @@
     --preto:#000;
     --branco:#fff;
     --shadow:rgb(0, 0, 0, 0.425);
+    --link:#0000EE ;
 }
 *{
     padding: 0px;
@@ -14,7 +15,27 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+#a, #b, #c, #d{
+    position: absolute;
+    display: block;
+    margin-bottom: 100px;
+}
 
+#a{
+    top: 0%;
+}
+
+#b{
+    top: 100%;
+}
+
+#c{
+    top:170%;
+}
+
+#d{
+    top:215%;
+}
 
 #container{
     color: var(--letra);
@@ -31,7 +52,7 @@
     overflow: hidden;
     background-color: var(--verde_escuro);
     padding: 5px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #left{
@@ -44,7 +65,7 @@
     float: right;
 }
 
-#bar a:hover{
+a:hover{
     background-color: var(--verde_claro);
 }
 
@@ -83,6 +104,13 @@ main h1{
     font-size: 1.2rem;
 }
 
+#skills{
+    height: 500px;
+    margin: 100px auto;
+    overflow: hidden;
+    scroll-margin-top: 5000px;
+}
+
 #skills > h1{
     margin-bottom: 20px;
 }
@@ -90,43 +118,97 @@ main h1{
 #_skills{
     display: flex;
     justify-content: space-evenly;
-    height: 500px;
-    width: 500px;
     margin: auto;
+    overflow: hidden;
 }
 
 #_skills  div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 280px;
     height: 300px;
     border: 2px solid var(--preto);
     text-align: justify;
+    margin: 0px 20px;
 }
 
 #_skills p{
     width: 160px;
     margin: auto;
-    position: absolute;
+    font-size: 1.1rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 #_skills img{
     width: 150px;
     display: block;
     margin: auto;
-    z-index: 1;
+    position: absolute;
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.3s ease;
 }
 
-#html{
-    float: left;
+#_skills  div:hover p{
+    display: block;
+    opacity: 1;
 }
 
-#css{
-    float: right;
+#_skills > div:hover img{
+    transform: translateY(-150%);
+    opacity: 0;
 }
 
-img{
-    width: 100px;
-    
+#qualificacoes{
+    height: 300px;
+}
+
+#qualificacoes h1{
+    margin-bottom: 20px;
+}
+
+li{
+    margin: 10px;
+    font-size: 1.2rem;
+    list-style-position: inside;
+}
+
+#projetos{
+    padding-bottom: 50px;
+}
+
+#projetos img{
+    display: block;
+    width: 50%;
+
+}
+
+#projetos a{
+    display: block;
+    color: var(--letra);
+    margin-top: 5px;
+    width: fit-content;
+}
+
+#projetos > div p{
+    display: block;
+    width: 45%;
+    text-align: justify;
+}
+
+#projetos > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+#td, #quiz, #alan{
+    display: block;
+    flex-direction: row;
+}
+
+#fw, #android{
+    flex-direction: row-reverse;
 }
