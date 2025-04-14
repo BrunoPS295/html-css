@@ -74,7 +74,8 @@ li{
 
 @media (max-width:800px) {
     nav{
-        width: 40vw;
+        width: 30vw;
+        overflow-y: hidden;
     }
     main h1{
         font-size: 1.5rem;
@@ -91,8 +92,8 @@ li{
         padding: 10px;
     }
     main{
-        width: 55vw;
-        margin-right: 2px;
+        width: 65vw;
+        margin-right: 5px;
     }
     main p{
         margin: 0px;
