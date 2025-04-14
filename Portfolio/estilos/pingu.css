@@ -226,6 +226,15 @@
 @media (max-width:650px) {
     #pingu{
         position: absolute;
-        top: 90%;
+        top: 95vh;
+    }
+}
+
+@media (max-width:450px) {
+    #pingu{
+        position: absolute;
+        top: 95vh;
+        left: 40%;
+        transform: scale(0.6) translate(-50%, -50%);
     }
 }
