@@ -39,6 +39,7 @@ main p{
 
 li{
     margin: 20px 80px;
+    list-style-position: inside;
 }
 
 .bloco_link{
@@ -72,14 +73,32 @@ li{
     nav{
         width: 40vw;
     }
+    main h1{
+        font-size: 1.5rem;
+        margin: 2px 2px;
+        text-align: center;
+    }
     nav > h1{
-        font-size: 2rem;
+        font-size: 1.2rem;
         padding: 0px;
         text-align: center;
+    }
+    .bloco_link{
+        text-align: left;
+        padding: 10px;
     }
     main{
         width: 55vw;
         margin-right: 0px;
+    }
+    main p{
+        margin: 0px;
+    }
+    .code{
+        margin: 10px 0px 10px 20px;
+    }
+    ul li{
+        margin: 0px;
     }
     html{
         overflow-x: hidden;

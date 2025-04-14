@@ -10,6 +10,9 @@
     #bar nav{
         display: none;
     }
+    #_skills{
+        column-count: 2;
+    }
     
 }
 
