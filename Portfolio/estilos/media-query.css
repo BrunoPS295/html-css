@@ -11,9 +11,26 @@
         display: none;
     }
     #_skills{
-        column-count: 2;
+        flex-wrap: wrap;
     }
-    
+    #_skills  div{
+        flex: 0 0;
+        margin: 20px;
+    }
+    #projetos div{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #projetos > div p{
+        display: block;
+        width: fit-content;
+        text-align: justify;
+    }
+    #projetos img{
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width:1000px) {

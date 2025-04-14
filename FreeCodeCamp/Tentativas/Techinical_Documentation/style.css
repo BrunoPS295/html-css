@@ -9,6 +9,7 @@
 
 nav{
     position: fixed;
+    top: 0;
     width: 20vw;
     height: fit-content;
     float: left;
