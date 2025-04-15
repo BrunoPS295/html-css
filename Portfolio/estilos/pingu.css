@@ -233,7 +233,7 @@
 @media (max-width:450px) {
     #pingu{
         position: absolute;
-        top: 89vh;
+        top: 88vh;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.6);
     }
