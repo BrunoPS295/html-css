@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Condensed+One&display=swap');
+:root{
+    --primario:#252528;
+    --secundario:#BE3144;
+    --projetos:#45567D;
+    --text:#F0F0F0;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--secundario);
+    z-index: 2;
+}
+header > nav{
+    float: right;
+    margin-right: 50px;
+}
+header a{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 22.5px 5px;
+    text-decoration: none;
+}
+header a:hover{
+    background-color: var(--projetos);
+}
+main{
+    padding-top: 80px;
+}
+#sobre{
+    text-align: center;
+    height:calc(100vh - 80px);
+    background-color: var(--primario);
+    font-size: 2rem;
+}
+#sobre h1, #sobre p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sobre p{
+    color: var(--secundario);
+}
+#trabalhos{
+    background-color: var(--projetos);
+    padding-bottom: 50px;
+}
+#projetos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+#trabalhos h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+.projetos{
+    width: 400px ;
+    height: fit-content;
+    overflow: hidden;
+    margin: 20px;
+}
+.projetos img{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.projetos p{
+    text-align: center;
+    background-color: var(--primario);
+    padding: 20px;
+    
+}
+.tag{
+    color: rgb(255, 106, 51);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.projetos a{
+    text-decoration: none;
+}
+.projetos a:hover .tag{
+    opacity: 1;
+}
+#trabalhos > a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: var(--primario);
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+#trabalhos > a:hover{
+    background-color: var(--secundario);
+}
+#trabalhos > a #menor{
+    display: inline-block;
+    font-size: 1.8rem;
+    position: relative;
+    transform: translate(0px, 6px);
+    transition: transform 0.5s ease;
+}
+#trabalhos > a:hover #menor{
+    transform: translate(5px, 6px);
+}
+#contato{
+    background-color: var(--primario);
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#contato > div{
+    height: 20px;
+}
+#contato h1{
+    font-size: 2rem;
+}
+#contato p{
+    display: block;
+}
+#contato nav{
+    padding-top: 100px;
+}
+#contato a{
+    display: inline-block;
+    margin: 0px 10px;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+#contato a:hover{
+    transform: translateY(5px);
+}
+#contato > nav p{
+    font-size: 1.2rem;
+}
+#contato svg{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+}
+footer{
+    height: 120px;
+    background-color: var(--primario);
+    border-top: 5px solid var(--secundario);
+    display: flex;
+    align-items: center;
+}
+#footer_l{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#footer_r{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+@media (max-width:1000px){
+    #trabalhos{
+      width:max-content;
+    }
+  }
